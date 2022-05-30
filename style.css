@@ -108,7 +108,7 @@ body {
   vertical-align: middle;
 }
 
-.task__item > input[type='checkbox'] {
+.task__input-checkbox {
   margin: 0 10px;
 }
 .task__item > label {

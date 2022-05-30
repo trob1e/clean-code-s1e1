@@ -3,22 +3,22 @@
   <head>
     <title>Todo App</title>
     <link 
-        href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
         rel="stylesheet">
     <link 
-        rel="stylesheet"
-        href="style.css"
-        media="screen"
+        rel="stylesheet" 
+        href="style.css" 
+        media="screen" 
         charset="utf-8">
   </head>
-  <body>
+  <body class="task-page">
     <header class="header">
       <img  
-          class="header__img" 
+          class="header__img"
           src="./eisenhower-matrix.jpg" 
           alt="Matrix picture">
       <a 
-          class="more_inf"
+          class="header__info" 
           href="https://goal-life.com/page/method/matrix-eisenhower"
           >Want more details?</a>
     </header>
@@ -37,10 +37,10 @@
       <ul id="task-incomplete" class="task__list">
         <li class="task__item">
           <input type="checkbox" class="task__input-checkbox">
-          <label class="task" task__label>Pay Bills</label>
+          <label class="task task__label">Pay Bills</label>
           <input 
               type="text" 
-              class="task  task__input-text task__item__input-text">
+              class="task task__input-text task__item__input-text">
           <button class="task__btn task-edit__btn">Edit</button>
           <button class="task__btn task-delete__btn">
             <img class="task-delete__img" src="./remove.svg" alt="">
@@ -48,11 +48,11 @@
         </li>
         <li class="task__item task-incomplete_edit">
           <input type="checkbox" class="task__input-checkbox">
-          <label class="task  task__label">Go Shopping</label>
+          <label class="task task__label">Go Shopping</label>
           <input 
               type="text" 
               value="Go Shopping" 
-              class="task  task__input-text task__item__input-text">
+              class="task task__input-text task__item__input-text">
           <button class="task__btn task-edit__btn">Save</button>
           <button class="task__btn task-delete__btn">
             <img class="task-delete__img" src="./remove.svg" alt="">
@@ -76,4 +76,4 @@
     </main>
     <script src="app.js"></script>
   </body>
-</html> 
+</html>
