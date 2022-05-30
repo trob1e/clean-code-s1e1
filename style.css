@@ -4,25 +4,25 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header__img {
   width: 100%;
 }
-.aaa .more_inf {
+.header__info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa { 
+  .header { 
     text-align: center;
   }
 }
-.centered-main-page-element {
+.container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.task__wrapper {
   display: flex;
 }
 ul {
@@ -40,7 +40,7 @@ ul {
   padding: 0px;
 }
 li,
-h3 {
+.section-title {
   list-style: none;
 }
 input,
@@ -60,8 +60,7 @@ button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for='new-task'] {
+.section-title{
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +69,7 @@ label[for='new-task'] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+input[type='text'] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,16 +81,16 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+input[type='text']:focus {
   color: #333;
 }
 
 /* New Task */
-label[for='new-task'] {
+.section-title__add {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.task__add{
   width: 318px;
 }
 
@@ -108,7 +107,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+li > input[type='checkbox'] {
   margin: 0 10px;
 }
 li > label {
@@ -117,20 +116,20 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+li > input[type='text'] {
   width: 226px;
 }
-.delete img {
+.task-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.task-delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+#task-completed label {
   text-decoration: line-through;
   color: #888;
 }
@@ -140,11 +139,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul .editMode input[type=text] {
+ul .task-incomplete_edit input[type='text'] {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+ul .task-incomplete_edit  label {
   display: none;
 } 
