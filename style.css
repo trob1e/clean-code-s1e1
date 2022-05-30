@@ -35,19 +35,20 @@ body {
 .task__wrapper {
   display: flex;
 }
-ul {
+.task__list {
   margin: 0;
   padding: 0px;
 }
-li,
+.task__item,
 .section-title {
   list-style: none;
 }
-input,
-button{
+.task__input-text,
+.task__input-checkbox,
+.task__btn {
   outline: none;
 }
-button {
+.task__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -56,7 +57,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.task__btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
